@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300" role="img" aria-label="Animated data engineering pipeline feeding AI and machine learning">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1023"/><stop offset="1" stop-color="#18143A"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#35D8FF"/><stop offset=".55" stop-color="#9D7BFF"/><stop offset="1" stop-color="#FF76CB"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <style>
+  .heading{font:700 18px Arial,sans-serif;fill:#EAF5FF;letter-spacing:.5px}
+  .sub{font:12px Arial,sans-serif;fill:#96A6CA}
+  .chip{font:600 12px Arial,sans-serif;fill:#B8C7E8}
+  .dash{stroke-dasharray:7 10;animation:dash 2.4s linear infinite}
+  .node{animation:breathe 3.5s ease-in-out infinite}
+  .particle{filter:url(#glow)}
+  @keyframes dash{to{stroke-dashoffset:-34}}
+  @keyframes breathe{50%{opacity:.82}}
+ </style>
+</defs>
+<rect width="1100" height="300" rx="18" fill="url(#bg)"/>
+<circle cx="1010" cy="25" r="135" fill="#6849C8" opacity=".08"/>
+<circle cx="70" cy="288" r="120" fill="#17CBE5" opacity=".06"/>
+<text x="550" y="43" fill="#F0F5FF" font-size="19" font-family="Arial,sans-serif" font-weight="700" text-anchor="middle">FROM RAW DATA TO INTELLIGENT SYSTEMS</text>
+<text x="550" y="65" fill="#8EA9CE" font-size="12" font-family="Arial,sans-serif" text-anchor="middle">Scalable pipelines • Trusted analytics • AI-ready data</text>
+
+<path id="lane" d="M205 154 H286 M476 154 H557 M747 154 H828" fill="none" stroke="#293E66" stroke-width="8" stroke-linecap="round"/>
+<path d="M205 154 H286 M476 154 H557 M747 154 H828" fill="none" stroke="url(#edge)" stroke-width="2.5" class="dash" filter="url(#glow)"/>
+
+<g class="node"><rect x="28" y="105" width="177" height="98" rx="16" fill="#10223A" stroke="#37CDEE" stroke-width="1.4"/><text x="116" y="134" class="heading" text-anchor="middle">DATA SOURCES</text><text x="116" y="159" class="sub" text-anchor="middle">APIs • SQL • Events</text><text x="116" y="180" class="chip" text-anchor="middle">Python · Kafka</text></g>
+<g class="node"><rect x="286" y="105" width="190" height="98" rx="16" fill="#1C1B42" stroke="#8D85FF" stroke-width="1.4"/><text x="381" y="134" class="heading" text-anchor="middle">PROCESSING</text><text x="381" y="159" class="sub" text-anchor="middle">Batch • Streaming • ETL</text><text x="381" y="180" class="chip" text-anchor="middle">Spark · PySpark</text></g>
+<g class="node"><rect x="557" y="105" width="190" height="98" rx="16" fill="#261A45" stroke="#AF80FF" stroke-width="1.4"/><text x="652" y="134" class="heading" text-anchor="middle">LAKEHOUSE</text><text x="652" y="159" class="sub" text-anchor="middle">Models • Quality • ELT</text><text x="652" y="180" class="chip" text-anchor="middle">Delta · dbt · Snowflake</text></g>
+<g class="node"><rect x="828" y="105" width="244" height="98" rx="16" fill="#301934" stroke="#FF78C4" stroke-width="1.4"/><text x="950" y="134" class="heading" text-anchor="middle">AI + ANALYTICS</text><text x="950" y="159" class="sub" text-anchor="middle">ML • NLP • RAG • BI</text><text x="950" y="180" class="chip" text-anchor="middle">Features · Embeddings</text></g>
+
+<circle r="4" fill="#58E5FF" class="particle"><animateMotion dur="3.1s" repeatCount="indefinite" path="M205 154 H286"/></circle>
+<circle r="4" fill="#9D90FF" class="particle"><animateMotion dur="3.1s" begin="0.85s" repeatCount="indefinite" path="M476 154 H557"/></circle>
+<circle r="4" fill="#FC8EDA" class="particle"><animateMotion dur="3.1s" begin="1.7s" repeatCount="indefinite" path="M747 154 H828"/></circle>
+<text x="550" y="254" font-family="Arial,sans-serif" font-size="13" fill="#92A6CE" text-anchor="middle">AWS  •  AZURE  •  GCP     |     AIRFLOW  •  DATABRICKS  •  CI/CD</text>
+<path d="M405 270 H695" stroke="url(#edge)" stroke-width="2" opacity=".5"/>
+</svg>
